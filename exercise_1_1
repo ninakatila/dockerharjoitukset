@@ -1,0 +1,14 @@
+ninakatila@ninakatila-Latitude-5480:~$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+e342c2873572   nginx     "/docker-entrypoint.…"   4 minutes ago    Up 4 minutes    80/tcp    tender_chaum
+d0782a91d084   nginx     "/docker-entrypoint.…"   6 minutes ago    Up 6 minutes    80/tcp    charming_torvalds
+efbeb68aa8ac   nginx     "/docker-entrypoint.…"   36 minutes ago   Up 36 minutes   80/tcp    frosty_murdock
+ninakatila@ninakatila-Latitude-5480:~$ sudo docker container stop e3 d
+e3
+d
+ninakatila@ninakatila-Latitude-5480:~$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED             STATUS                     PORTS     NAMES
+e342c2873572   nginx     "/docker-entrypoint.…"   39 minutes ago      Exited (0) 8 seconds ago             tender_chaum
+d0782a91d084   nginx     "/docker-entrypoint.…"   40 minutes ago      Exited (0) 8 seconds ago             charming_torvalds
+efbeb68aa8ac   nginx     "/docker-entrypoint.…"   About an hour ago   Up About an hour           80/tcp    frosty_murdock
+
